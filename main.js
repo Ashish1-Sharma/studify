@@ -15,13 +15,13 @@ const db = mongoose.connection;
 db.on("error", (error) => console.log("Something is wrong:", error));
 db.once("open", () => console.log("Connected to the database"));
 
-app.use(cors(
-  {
-    origin:"*",
-    credentials:true,
-    optionsSuccessStatus:200
-  }
-))
+// app.use(cors(
+//   {
+//     origin:"*",
+//     credentials:true,
+//     optionsSuccessStatus:200
+//   }
+// ))
 // Middlewares
 app.use(express.urlencoded({extended:false}));
 app.use(express.json());
