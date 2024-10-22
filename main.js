@@ -2,7 +2,7 @@ import express from "express";
 import mongoose from "mongoose";
 import session from "express-session";
 import dotenv from "dotenv";  // Import dotenv to load environment variables
-import cors from "cors";
+// import cors from "cors";
 import cookieParser from "cookie-parser";
 dotenv.config();  // Load .env file
 
